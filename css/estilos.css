@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nunito Sans", sans-serif;
+    background-color: rgb(237, 240, 254);
+}
+
+header, main {
+    width: 83.33%;
+    margin: 0 auto;
+    justify-content: center; 
+    margin-top: 50px; 
+    height: 50vh;
+}
+
+div{
+    width: 100%;
+    display: block;
+    border-radius: 10px ;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between ;
+    margin-top: 40px;
+}
+
+[src="imagenes/Principal2.png"],
+[src="imagenes/Principal1.png"]{
+    width: 48%;
+    border-color: rgb(22, 58, 248);
+    border: 1px solid ;
+    transition-property: filter;
+    transition: 1s;
+}
+
+[src="imagenes/Pantalla1.png"],
+[src="imagenes/Pantalla2.png"],
+[src="imagenes/Pantalla3.png"]{
+    width: 30%;
+    border-radius: 40px;
+    border-color: rgb(22, 58, 248);
+    border: 1px solid ;
+    transition-property: filter;
+    transition: 1s;
+}
+
+[src="imagenes/Principal2.png"]:hover,
+[src="imagenes/Principal1.png"]:hover,
+[src="imagenes/Pantalla1.png"]:hover,
+[src="imagenes/Pantalla2.png"]:hover,
+[src="imagenes/Pantalla3.png"]:hover{
+filter: grayscale(100%);
+}
+
+[src="imagenes/Final.png"]{
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+}
+
+section{
+    margin-top: 60px;
+    width: 100%;
+}
+    
+    
+h1,h2,h3{
+    font-family: "Poppins", sans-serif;
+    color: rgb(22, 58, 248);
+}
+
+h1{
+    text-align: left;
+    font-size: 5em;
+    line-height: 80px;
+    margin-bottom: 30px;
+}
+    
+h2{
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+p{
+    font-weight: 300;
+    font-size: 1em;
+    width: 55%;
+}
+
+span{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+[title="Behance"]{
+    margin-top: 20px;
+    width:100px;
+    height: 30px;
+    background-color: rgb(22, 58, 248);
+    border-color: rgb(22, 58, 248);
+    border: 2px solid ;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: block;
+    text-align:center;
+    line-height: 30px;
+    text-decoration: none;
+    transition: all 2s ;
+}
+
+[title="Behance"]:hover {
+    background-color: #ffffff;
+    color: rgb(22, 58, 248);
+}
+
+@media (max-width: 768px){
+    body { font-size: 10px;}
+    main,section {
+    flex-direction: column;
+    height: auto;
+    }
+}
